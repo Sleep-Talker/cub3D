@@ -15,7 +15,7 @@
 void	invalid_cub_file(t_param *p, int code)
 {
 	p->spritesnb = 0;
-	write(1, "Error: \ninvalid .cub file: ", 27);
+	write(1, "Error\n \ninvalid .cub file: ", 27);
 	if (code == 0)
 		write(1, "8 lines must start with correct identifier.", 43);
 	if (code == -5)

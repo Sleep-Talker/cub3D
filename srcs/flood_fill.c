@@ -28,7 +28,7 @@ void	flood_fill(t_param *p, t_pt coord)
 {
 	if (reached_limit(p, coord))
 	{
-		write(1, "Error:\nmap should be closed by walls. \
+		write(1, "Error\n map should be closed by walls. \
 Player should be inside.\n", 63);
 		free_and_exit(p);
 	}

@@ -90,7 +90,7 @@ void	screenshot(char **argv, t_param *p, int fd)
 		exit(2);
 	if (!(check_and_parse(argv, fd, p)))
 	{
-		write(1, "invalid .cub file", 17);
+		write(1, "Error\ninvalid .cub file", 23);
 		exit(2);
 	}
 	single_ray_cast(p);

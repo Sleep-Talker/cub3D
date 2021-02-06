@@ -33,12 +33,12 @@ void	right_args_number(int argc, char **argv, t_param *param)
 
 	if (!(check_ext(argv[1])))
 	{
-		write(1, "Error: File must have a '.cub' extension.\n", 41);
+		write(1, "Error\n File must have a '.cub' extension.\n", 41);
 		exit(2);
 	}
 	if ((fd = open(argv[1], O_RDONLY)) < 0)
 	{
-		write(1, "Error: Cub file not found.\n", 27);
+		write(1, "Error\n Cub file not found.\n", 27);
 		exit(2);
 	}
 	if (argc == 2 && argv[1]
@@ -54,7 +54,7 @@ void	check_arg(int argc, char **argv, t_param *param)
 		right_args_number(argc, argv, param);
 	else
 	{
-		write(1, "Error: \nInvalid (number of) argument(s).", 39);
+		write(1, "Error\n Invalid (number of) argument(s).\n", 39);
 		exit(1);
 	}
 }
