@@ -50,7 +50,7 @@ void	right_args_number(int argc, char **argv, t_param *param)
 
 void	check_arg(int argc, char **argv, t_param *param)
 {
-	if (argc == 2 || argc == 3)
+	if (argc == 2 || (argc == 3 && !(ft_strncmp(argv[2], "--save", 6))))
 		right_args_number(argc, argv, param);
 	else
 	{
