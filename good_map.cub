@@ -1,9 +1,9 @@
 R 800 400
-NO ./ressources/tex_wall_N.xpm
-SO ./ressources/tex_wall_S.xpm
-WE ./ressources/tex_wall_W.xpm
-EA ./ressources/tex_wall_E.xpm
-S ./ressources/evee.xpm
+NO ./textures/tex_wall_N.xpm
+SO ./textures/tex_wall_S.xpm
+WE ./textures/tex_wall_W.xpm
+EA ./textures/tex_wall_E.xpm
+S ./textures/evee.xpm
 F 255,255,255
 C 1,1,1
 11111111111111111111111111111111111
